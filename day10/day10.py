@@ -2,15 +2,10 @@ cycles = [20, 60, 100, 140, 180, 220]
 result = []
 register = 1
 current_cycle = 0
-commands = {
-    "addx": 3,
-    "noop": 1
-}
 queue = []
 image = ['.' for i in range(40*6)]
 
 def print_image():
-    print(len(image))
     for i in range(len(image)):
         print(image[i], end=' ')        
         if((i+1) % 40 == 0):
@@ -46,6 +41,10 @@ def part1():
     print(result)
     print(sum(result))
 
-part1()
-print_image()
+def part2():
+    readInput()
+    run()
+    print_image()
 
+# part1()
+part2()

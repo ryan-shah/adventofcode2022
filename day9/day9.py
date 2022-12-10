@@ -93,6 +93,7 @@ def part2():
         do_move(move)
     print(len(set(tail_pos)))
 
+#part1()
 part2()
 
 
